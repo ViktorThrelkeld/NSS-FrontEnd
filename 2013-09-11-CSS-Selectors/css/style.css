@@ -1,0 +1,51 @@
+/* this is a single line comment*/
+/* this is a
+    multi
+    line
+    comment
+    */
+#div1
+{
+  color: #ff0000;
+}
+/*selecting by class*/
+
+.divs{
+  background-color: yellow;
+}
+p
+{
+color: green;
+}
+/*things above this sentence are very common. below it are not so much*/
+/*this is how to tag someting without having to rename it. refer to the selector level 3 worksheet */
+a[href="http://google.com"]
+{
+  background-color: red;
+}
+/*looks for something matching the end*/
+a[href$="cnn.com"]
+{
+  background-color: green;
+}
+/*star means this is in there somewhere*/
+a[href*="yahoo"]
+{
+  background-color: blue;
+}
+/*the arrow tells all its children to inherit the style. the nth child specifies*/
+ul > li:nth-child(3) > span:nth-child(2n)
+{
+  font-size: 25px;
+}
+a:hover{
+background-color: white;
+}
+#span2{
+  background-color: green;
+}
+span{
+  background-color: blue;
+}
+
+}
