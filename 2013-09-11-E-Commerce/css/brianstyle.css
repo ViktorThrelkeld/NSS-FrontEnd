@@ -41,3 +41,42 @@ article{
   margin-bottom: 10px;
 }
 /*style below for contact page********************************************/
+#contacts{
+  float: left;
+  margin-top: 40px;
+  margin-left: 150px;
+
+}
+.conhead{
+  text-decoration: underline;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#add{
+  margin-top: 25px;
+}
+/*figure out address problem*/
+#addressbig{
+
+  font-size: 20px;
+}
+
+#tellie{
+  font-size: 20px;
+}
+
+#email{
+  color:white;
+  font-size: 20px;
+  text-decoration: underline;
+}
+#email:hover{
+  color:red;
+}
+#submit{
+  margin-top: 15px;
+}
+
+#catcall{
+  margin-left: 200px;
+}
