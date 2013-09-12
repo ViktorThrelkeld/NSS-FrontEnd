@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
+header {
+  height: 115px;
+  padding-right: 15px;
+  background-color: #00CCCC;
+  color: white
+}
+#logo {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-family: 'Rock Salt', cursive;
+  font-size: 40px;
+  text-shadow: 1px 2px 4px #333;
+}
+a {
+  text-decoration: none;
+}
+address {
+  float: right;
+  clear: right;
+  font-size: 12px;
+}
+header > a > img {
+  margin-top: 5px;
+  float: right;
+}
+header > #logo{
+  float: left;
+}
+#topnav, #bottomnav {
+  display: table;
+}
+#topnav {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 2px ridge #FFF;
+  border-bottom: 4px ridge #CCC;
+  background-color: #CCC;
+}
+nav > ul {
+  display: table-row;
+  width: 100%;
+}
+nav > ul > li {
+  display: table-cell;
+  text-align: center;
+  width: 1%;
+  border-right: 1px solid black;
+}
+nav > ul > li:last-child {
+  border-right: none;
+}
+.clear {
+  float: none;
+  clear: both;
+}
+body > section {
+  font-family: 'News Cycle', sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #222;
+  color: white;
+}
+section > iframe {
+  display: block;
+  margin: auto;
+  padding-bottom: 30px;
+}
+#featured {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.featureditem {
+  display: inline-block;
+  width: 210px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+footer {
+  padding-top: 15px;
+  padding-left: 15px;
+  height: 35px;
+  vertical-align: middle;
+  background-color: green;
+}
+#bottomnav {
+  margin-right: 15px;
+  float: right;
+  font-size: 14px;
+}

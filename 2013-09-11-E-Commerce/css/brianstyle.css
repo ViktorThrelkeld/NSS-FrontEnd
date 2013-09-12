@@ -1,0 +1,43 @@
+/*change titles*/
+
+/*style for individual product pages********************************************/
+#indprodimg{
+float:left;
+/*width: 500px;*/
+height: 325px;
+margin-top:15px;
+margin-left: 40px;
+margin-bottom: 15px;
+}
+
+#modelprice{
+  float: left;
+  margin-top: 60px;
+  margin-left: 100px;
+  line-height: 50px;
+}
+#mod{
+  font-size: 30px;
+  font-weight: 400px;
+}
+#price{
+  font-size: 20px;
+  font-weight: 400px;
+  margin-left: 20px;
+}
+#productlist{
+list-style: circle;
+margin-left: 20px;
+}
+#descript{
+  margin-left: 40px
+}
+.dh{
+  text-decoration: underline;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+article{
+  margin-bottom: 10px;
+}
+/*style below for contact page********************************************/
