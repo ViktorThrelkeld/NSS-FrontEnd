@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/brianstyle.css">
-  <title>Cat Scratchers</title>
+  <link rel="stylesheet" href="css/stylematt.css">
+  <title>Cat Scratchers | Home</title>
 </head>
 <body>
   <header>
     <div id="logo">
-      <h1>Cat Scratchers</h1>
+      <h1><a href="index.html">Cat Scratchers</a></h1>
     </div>
-
-    <img src="images/cart.png" alt="Shopping Cart" width="30" height="30">
-    <address>
+    <a href="cart.html">
+      <img src="images/cart.png" alt="Shopping Cart" width="30" height="30">
+    </a>
+    <address id="smalladdress">
       <pre>
         736 S Jackson St
         Louisville, KY
@@ -23,52 +24,88 @@
         (502) 584-3424
       </pre>
     </address>
-  </header>
-    <nav id="topnav">
-      <a href="products.html">Products</a> |
-      <a href="about.html">About Us</a> |
-      <a href="faq.html">Frequently Asked Questions</a> |
-      <a href="contact.html">Contact Us</a> |
-      <a href="cart.hml">Shopping Cart</a>
-    </nav>
     <div class="clear"></div>
+  </header>
 
-  <section>
+    <nav id="topnav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">Frequently Asked Questions</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="cart.html">Shopping Cart</a></li>
+      </ul>
+    </nav>
+
+
+  <section id="main">
 
     <iframe width="560" height="315" src="http://www.youtube.com/embed/K7dcSr04G8s" frameborder="0" allowfullscreen></iframe>
 
+
     <section id="featured">
-      <div class="featureditem">
-        <a href="">
-          <img src="" alt="">
+
+      <div id="featurewrap">
+        <h2>Featured Products:</h2>
+        <a href="catmic.html">
+        <div class="featureditem">
+
+          <img src="images/catmic_sm.jpg" alt="Cat Microphone">
+
+          <article class="blurb">
+          Cat Microphone
+          <p>
+            Gold VocoPro MK-58 Pro - $59.00
+          </p>
+          </article>
+
+        </div>
+
         </a>
-        <a href="">Product name</a>
-        <div class="blurb">A little bit about the product</div>
-      </div>
-      <div class="featureditem">
-        <a href="">
-          <img src="" alt="">
+        <a href="catrecordplayer.html">
+        <div class="featureditem">
+
+            <img src="images/catrecordplayer_sm.jpg" alt="Cat Record Player">
+
+          <article class="blurb">
+          Cat Record Player
+          <p>
+            Technics SL1200 - $750.00
+          </p>
+          </article>
+        </div>
         </a>
-        <a href="">Product name</a>
-        <div class="blurb">A little bit about the product</div>
-      </div>
-      <div class="featureditem">
-        <a href="">
-          <img src="" alt="">
+
+        <a href="catsynth.html">
+        <div class="featureditem">
+
+            <img src="images/catsynth_sm.jpg" alt="Cat Synthesizer">
+
+          <article class="blurb">
+          Cat Synthesizer
+          <p>
+            Voyager Select Series - $3016.65
+          </p>
+          </article></div>
+          </div>
+        </div>
         </a>
-        <a href="">Product name</a>
-        <div class="blurb">A little bit about the product</div>
       </div>
+    </section>
 
   </section>
   <footer>
-    &copy; 2013 Cats Music
+    <span id="copyright"><span>&copy;</span> 2013 Cat Scratchers</span>
     <nav id="bottomnav">
-      <a href="products.html">Products</a> |
-      <a href="about.html">About Us</a> |
-      <a href="faq.html">Frequently Asked Questions</a> |
-      <a href="contact.html">Contact Us</a> |
-      <a href="cart.hml">Shopping Cart</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">Frequently Asked Questions</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="cart.html">Shopping Cart</a></li>
+      </ul>
     </nav>
   </footer>
 </body>
