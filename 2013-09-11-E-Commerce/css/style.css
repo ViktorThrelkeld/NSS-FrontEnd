@@ -265,7 +265,7 @@ article{
 #contacts{
   float: left;
   margin-top: 40px;
-  margin-left: 150px;
+  margin-left: 100px;
 
 }
 .conhead{
@@ -306,7 +306,10 @@ article{
 }
 
 #catcall{
-  margin-left: 200px;
+  /*margin-left: 200px;*/
+  float: right;
+  margin-right: 50px;
+
 }
 /*Matt's Stuff*/
 
