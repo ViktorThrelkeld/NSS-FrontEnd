@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Cinzel);
+header {
+  border: 2px dashed #ae0707; }
+  header #logo {
+    width: 78px;
+    height: 105px;
+    background: url(../images/tesla.png);
+    float: left; }
+  header #company {
+    float: left; }
+    header #company h1 {
+      margin-left: 50px;
+      margin-top: 25px;
+      font-family: "Cinzel", serif; }
+
+nav ul {
+  list-style-type: none; }
+  nav ul li {
+    display: inline-block;
+    padding-right: 50px; }
+
+div#content section h1 {
+  font-size: 20px;
+  color: #ae0707; }
+div#content section h2 {
+  font-size: 18px;
+  color: #813434; }
+div#content section p {
+  font-size: 12px;
+  color: #575757; }
+
+footer p {
+  font-size: 8px;
+  color: #ae0707; }
+
+#main {
+  width: 960px;
+  margin: 0 auto; }
+
+.clear {
+  clear: both; }
+
+a {
+  text-decoration: none;
+  color: #ae0707; }
+  a:hover {
+    text-decoration: underline;
+    color: #8a2b2b; }
