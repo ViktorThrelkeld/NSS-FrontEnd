@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative);
+@import url(http://fonts.googleapis.com/css?family=Cinzel);
+
+#logoimg{
+  /*float: left;*/
+  /*width: 100px;*/
+  margin: auto;
+  width:200px;
+  /*display: block;*/
+}
+
+#logotxt{
+  /*float: left;*/
+  width: 400px;
+  margin: auto;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 36px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+#navdiv{
+  width: 100%;
+}
+nav{
+  width: 960px;
+  background-color: purple;
+  /*width: 960px;*/
+  margin: 10px auto;
+ -moz-box-shadow: 10px 26px 5px #000000;
+    -webkit-box-shadow: 10px 26px 5px #000000;
+    box-shadow: 10px 26px 5px #000000;
+
+}
+nav ul{
+  margin: auto;
+  /*margin: 0;*/
+  list-style: none;
+  width: 960px;
+  float: left;
+}
+nav li{
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  width: 20px;
+  margin: auto;
+  float:left;
+}
+nav ul li a:link, nav ul li a:visited{
+text-decoration: none;
+color: grey;
+background-color: brown;
+border-left:1px solid pink;
+margin: auto;
+}
+nav ul li a:hover{
+  background-color: orange;
+}
+
+#content{
+  background-color: green;
+  width: 960px;
+  margin:auto;
+  margin-top: 50px;
+ -moz-box-shadow: 10px 26px 5px #000000;
+    -webkit-box-shadow: 10px 26px 5px #000000;
+    box-shadow: 10px 26px 5px #000000;
+
+}
+.clear{
+  clear: both;
+}
+
+
+h1{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 36px;
+  background-color: pink;
+}
+
+body{
+  font-family: 'Cinzel', serif;
+  background-color: grey;
+
+
+}
+#skills{
+  background-color: orange;
+  color: grey;
+  width: 200px;
+  margin: 15px 5px;
+}
+#bio{
+  background-color: yellow;
+  /*display: block;*/
+  margin: 15px 5px;
+
+}
+
+section > p{
+  padding: 10px;
+  line-height: 15px;
+}
+p:nth-child(2n+1)
+{
+  font-style: italic;
+  color: blue;
+}
+section > h2{
+  font-size: 25px
+}
+ul{
+  list-style: disc;
+  margin-left: 20px;
+}
+
+#about:hover{
+  color:black;
+}
+footer{
+  font-size: 10px;

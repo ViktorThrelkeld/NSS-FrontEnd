@@ -20,14 +20,29 @@ nav ul {
     padding-right: 50px; }
 
 div#content section h1 {
+  color: #ae0707;
+  font-family: "Cinzel", serif;
   font-size: 20px;
-  color: #ae0707; }
+  line-height: 20px;
+  letter-spacing: 5px; }
 div#content section h2 {
+  color: #813434;
+  font-family: "Cinzel", serif;
   font-size: 18px;
-  color: #813434; }
+  line-height: 20px;
+  letter-spacing: 3px; }
 div#content section p {
-  font-size: 12px;
-  color: #575757; }
+  color: #ff0033;
+  font-family: "Cinzel", serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin: 5px;
+  padding: 10px;
+  border: 2px dashed green;
+  border-radius: 15px;
+  background-color: blue;
+  box-shadow: 5px 5px 10px black; }
 
 footer p {
   font-size: 8px;
