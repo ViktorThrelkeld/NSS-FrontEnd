@@ -6,10 +6,13 @@
     %link{rel: 'stylesheet', href: 'css/normalize.css'}
     %link{rel: 'stylesheet', href: 'css/style.css'}
   %body
-    = Haml::Engine.new(File.read('haml/_header.haml')).render
-    = Haml::Engine.new(File.read('haml/_nav.haml')).render
-    = Haml::Engine.new(File.read('haml/_content.haml')).render
-    = Haml::Engine.new(File.read('haml/_footer.haml')).render
+    %input#button1{type: 'button', value: 'Make me green!'}
+    #green Green Div
+
+    %input#name_txt{type: 'text', value: 'Enter your name'}
+    %input#name_btn{type: 'button', value: 'Count the characters!'}
+    #name_div BLANK
+
 
     %script{src: 'js/jquery-1.10.2.min.js'}
     %script{src: 'js/underscore-min.js'}
