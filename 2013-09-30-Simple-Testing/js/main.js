@@ -39,11 +39,10 @@ function pig_greeting(greeting, person){
 }
 
 function pig_sentence(sentence){
-  debugger;
+  // debugger;
  var words = sentence.split(' ');
  var array = [];
-
- for(var i = 0; i < words.length; i++){
+  for(var i = 0; i < words.length; i++){
     array.push(pig_latin(words[i]));
  }
     return array.join(' ');

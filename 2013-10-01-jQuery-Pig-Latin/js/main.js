@@ -1,7 +1,7 @@
 $(document).ready(initialize);
 
 function piggy(word){
-   return word.slice(1) + word[0] + 'a'
+   return word.slice(1) + word[0] + 'a';
 
 }
 
