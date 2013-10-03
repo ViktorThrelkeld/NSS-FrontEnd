@@ -36,3 +36,4 @@ function makeColorBoxes()
     $('#boxes').append($color);
   }
 }
+

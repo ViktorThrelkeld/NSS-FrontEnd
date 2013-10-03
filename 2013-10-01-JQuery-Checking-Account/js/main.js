@@ -32,3 +32,4 @@ function orig_amountwith(){
   if(balance <= 0)
     $('#balance').addClass('negative');
 }
+

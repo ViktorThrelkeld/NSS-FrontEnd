@@ -1,0 +1,12 @@
+body {
+  background-color: grey; }
+
+#depositlist {
+  color: green; }
+
+#withdrawllist {
+  color: red; }
+
+#logo {
+  width: 200px;
+  height: 200px; }

@@ -1,0 +1,31 @@
+!!! 5
+%html{lang: 'en'}
+  %head
+    %meta{charset: 'utf-8'}
+    %title  Template
+    %link{rel: 'stylesheet', href: 'css/normalize.css'}
+    %link{rel: 'stylesheet', href: 'css/style.css'}
+  %body
+    %h1 The Geek Bank
+    %img#logo
+    %input#httpinput{type: 'text', value: 'logo http here'}
+    %input#setlogo{type: 'button', value: 'Push to Set Logo!'}
+    #balance
+    %input#balanceinput{type: 'text', value: 'starting balance here'}
+    %input#setbalance{type: 'button', value: 'Push to Set Balance'}
+    %input#amount{type: 'text', value: 'Put Deposit/Withdrawl Amount Here'}
+    %input#depositbutton{type: 'button', value: 'Push to Deposit'}
+    %input#withdrawlbutton{type: 'button', value:'Push to Withdrawl'}
+    %section
+    %h4 Deposits
+      #depositlist
+    %h4 Withdrawls
+      #withdrawllist
+
+
+
+    %script{src: 'js/jquery-1.10.2.min.js'}
+    %script{src: 'js/underscore-min.js'}
+    %script{src: 'js/main.js'}
+
+
