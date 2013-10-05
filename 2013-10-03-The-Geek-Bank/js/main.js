@@ -7,6 +7,8 @@ function initialize(){
   $('#setbalance').click(setBalance);
   $('#depositbutton').click(makeDeposit);
   $('#withdrawlbutton').click(makeWithdrawl);
+  $('#depositlist').on('click','li', removeDeposit);
+  $('#withdrawllist').on('click','li', removeWithdrawl);
 }
 
 function setLogo(){
@@ -23,8 +25,7 @@ function setBalance(){
 
 
 function makeDeposit(){
-  var existingbalance = $('#balance').text();
-  existingbalance = parseInt(existingbalance);
+  var existingbalance = pull();
   var deposit = $('#amount').val();
   deposit = parseInt(deposit,10);
   existingbalance += deposit;
@@ -33,8 +34,7 @@ function makeDeposit(){
 }
 
 function makeWithdrawl(){
-  var existingbalance = $('#balance').text();
-  existingbalance = parseInt(existingbalance);
+  var existingbalance = pull();
   var withdrawl = $('#amount').val();
   withdrawl = parseInt(withdrawl,10);
   existingbalance -= withdrawl;
@@ -48,14 +48,45 @@ function clearInput(){
 }
 
 function depositList(input){
-  var $newdeposit = $('<div>');
+  var $newdeposit = $('<li>');
+  $newdeposit.addClass('green');
   $newdeposit.text(input);
-  $(depositlist).prepend($newdeposit)
+  $(depositlist).append($newdeposit)
+}
+
+function pull(){
+  var existingbalance = $('#balance').text();
+  existingbalance = parseInt(existingbalance);
+  return existingbalance
+
 }
 
 function withdrawlList(input){
-  var $newwithdrawl = $('<div>');
+  var $newwithdrawl = $('<li>');
+  $newwithdrawl.addClass('red');
   $newwithdrawl.text(input);
-  $(withdrawllist).prepend($newwithdrawl);
+  $(withdrawllist).append($newwithdrawl);
+}
+
+function removeDeposit(){
+  var $item = $(this);
+  var info = $item.text();
+  info = parseInt(info,10);
+  var existingbalance = pull();
+  existingbalance -= info;
+  $('#balance').text(existingbalance);
+  $item.remove();
 
 }
+
+
+function removeWithdrawl(){
+  var $item = $(this);
+  var info = $item.text();
+  info = parseInt(info,10);
+  var existingbalance = pull();
+  existingbalance += info;
+  $('#balance').text(existingbalance);
+  $item.remove();
+}
+

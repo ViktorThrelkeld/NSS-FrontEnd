@@ -1,12 +1,28 @@
 body {
   background-color: grey; }
 
-#depositlist {
-  color: green; }
-
-#withdrawllist {
-  color: red; }
+h4 {
+  color: black; }
 
 #logo {
   width: 200px;
   height: 200px; }
+
+.red {
+  color: red; }
+
+.green {
+  color: green; }
+
+#transactions #depositlist {
+  margin-left: 300px;
+  width: 200px;
+  list-style: none;
+  float: left; }
+#transactions #withdrawllist {
+  width: 200px;
+  list-style: none;
+  float: left; }
+
+.clear {
+  clear: both; }

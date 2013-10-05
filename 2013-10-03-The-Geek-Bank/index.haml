@@ -6,21 +6,25 @@
     %link{rel: 'stylesheet', href: 'css/normalize.css'}
     %link{rel: 'stylesheet', href: 'css/style.css'}
   %body
-    %h1 The Geek Bank
-    %img#logo
-    %input#httpinput{type: 'text', value: 'logo http here'}
-    %input#setlogo{type: 'button', value: 'Push to Set Logo!'}
-    #balance
-    %input#balanceinput{type: 'text', value: 'starting balance here'}
-    %input#setbalance{type: 'button', value: 'Push to Set Balance'}
-    %input#amount{type: 'text', value: 'Put Deposit/Withdrawl Amount Here'}
-    %input#depositbutton{type: 'button', value: 'Push to Deposit'}
-    %input#withdrawlbutton{type: 'button', value:'Push to Withdrawl'}
+    %header
+      %h1 The Geek Bank
     %section
-    %h4 Deposits
-      #depositlist
-    %h4 Withdrawls
-      #withdrawllist
+      %img#logo
+      %input#httpinput{type: 'text', value: 'logo http here'}
+      %input#setlogo{type: 'button', value: 'Push to Set Logo!'}
+    %section
+      #balance
+      %input#balanceinput{type: 'text', value: 'starting balance here'}
+      %input#setbalance{type: 'button', value: 'Push to Set Balance'}
+    %section
+      %input#amount{type: 'text', value: 'Put Deposit/Withdrawl Amount Here'}
+      %input#depositbutton{type: 'button', value: 'Push to Deposit'}
+      %input#withdrawlbutton{type: 'button', value:'Push to Withdrawl'}
+    %section
+      #transactions
+        %ul#depositlist Deposits
+        %ul#withdrawllist Withdrawls
+        .clear
 
 
 
