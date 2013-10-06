@@ -4,6 +4,31 @@ $(document).ready(initialize);
 function initialize(){
   $('#addtask').click(addTask);
   $('table').on('click', '.nuke', nuke);
+  $('table').on('click', '.up, .down', move);
+  $('table').on('click', '.check', strike)
+}
+
+function strike(){
+  var $strike = $(this);
+  if($strike.prop('checked')){
+    $strike.parent().parent().addClass('strike');
+  }
+  else{
+    $strike.parent().parent().removeClass('strike');
+  }
+}
+
+function move(){
+  var $img = $(this);
+  var $tr = $img.parent().parent();
+
+  if($tr.hasClass('up')){
+    if(!$tr.prev().hasClass('home')){
+      $tr.prev().after($tr);
+    }
+  }else{
+    $tr.next().after($tr);
+  }
 }
 
 function nuke(){
@@ -33,9 +58,11 @@ function addTask(){
   $done.addClass('done');
   var $checkbox = $('<input>');
   $checkbox.attr('type', 'checkbox');
+  $checkbox.addClass('check');
   $done.append($checkbox);
 
   var $remove = $('<td>');
+  $remove.addClass('remove');
   var $nuke = $('<input>');
   $nuke.attr('type', 'button');
   $nuke.val('Remove!');
@@ -44,6 +71,14 @@ function addTask(){
 
   var $updown = $('<td>');
   $updown.addClass('updown');
+  var $uparrow = $('<img>');
+  $uparrow.attr('src', 'images/up.png');
+  $uparrow.addClass('up');
+  var $downarrow = $('<img>');
+  $downarrow.attr('src', 'images/down.png');
+  $downarrow.addClass('down');
+  $updown.append($uparrow, $downarrow);
+
 
   $tr.append($duedate, $task, $color, $done, $remove, $updown);
   $('table').append($tr);

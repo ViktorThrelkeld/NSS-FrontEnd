@@ -1,2 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Voltaire);
 
+body{
+background-color: #073D4A;
+font-family: 'Voltaire', sans-serif;
+}
+p{
+  color: #9BAFAB;
+}
+h1{
+  width: 200px;
+  margin: auto;
+  margin-bottom: 25px;
+  font-family: 'Voltaire', sans-serif;
+  color: #717A77;
+}
+#inputs{
+  margin-bottom: 25px;
+}
+#duedate{
+  width: 100px;
+}
+#color{
+  width: 100px;
+
+
+}
+
+#addtask{
+  border:hidden 0px #000000;
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+    border-radius: 75px;
+
+}
+table{
+  margin: auto;
+}
+th{
+  color: #717A77;
+}
+
+#dueTh{
+  width: 100px;
+}
+.duedate{
+  width: 50px;
+  padding-left: 25px;
+  color: #9BAFAB;
+}
+
+#taskTh, .task{
+  width: 200px;
+}
+.task{
+  width: 100px;
+  // padding-left: 60px;
+  text-align: center;
+  color: #9BAFAB;
+}
+#colorTh{
+  width: 50px;
+}
+.color{
+
+
+    border:hidden 0px #000000;
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+    border-radius: 75px;
+
+
+}
+#doneTh{
+  padding-left: 20px;
+}
+.check{
+  margin-left: 30px;
+}
+
+#removeTh{
+  width: 100px;
+  // padding-left: 20px;
+}
+.remove{
+  padding-left: 15px;
+}
+
+
+.strike{
+  background-color: pink;
+}
 

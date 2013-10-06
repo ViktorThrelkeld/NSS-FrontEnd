@@ -7,15 +7,16 @@
     %link{rel: 'stylesheet', href: 'css/style.css'}
   %body
     %h1 To Do List!
-    %section
-      %input#duedate{type: 'text', placeholder: 'month/day/year'}
-      %input#task{type: 'text', placeholder: 'enter task'}
-      %input#color{type: 'text', placeholder: 'enter a color'}
-      %input#addtask{type: 'button', value: 'Add Task'}
+    %section#inputs
+      %input#duedate{type: 'text', placeholder: 'Month/Day/Year'}
+      %input#task{type: 'text', placeholder: 'Enter task'}
+      %input#color{type: 'text', placeholder: 'Enter a color'}
+      %input#addtask{type: 'button', value: 'Add Task!'}
+      %p now accomplish that task...
 
     %section
       %table
-        %tr
+        %tr.home
           %th#dueTh Due Date
           %th#taskTh Task
           %th#colorTh Color
