@@ -83,5 +83,8 @@ function addTask(){
   $tr.append($duedate, $task, $color, $done, $remove, $updown);
   $('table').append($tr);
 
+  $('#duedate').val('').focus();
+  $('#task').val('');
+  $('#color').val('');
 
 }
