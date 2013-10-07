@@ -5,7 +5,7 @@ function initialize(){
   $('#addtask').click(addTask);
   $('table').on('click', '.nuke', nuke);
   $('table').on('click', '.up, .down', move);
-  $('table').on('click', '.check', strike)
+  $('table').on('click', '.check', strike);
 }
 
 function strike(){
@@ -22,9 +22,9 @@ function move(){
   var $img = $(this);
   var $tr = $img.parent().parent();
 
-  if($tr.hasClass('up')){
+  if($img.hasClass('up')){
     if(!$tr.prev().hasClass('home')){
-      $tr.prev().after($tr);
+      $tr.prev().before($tr);
     }
   }else{
     $tr.next().after($tr);

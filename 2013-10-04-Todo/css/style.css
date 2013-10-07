@@ -72,4 +72,5 @@ th {
   padding-left: 15px; }
 
 .strike {
-  background-color: pink; }
+  background-color: pink;
+  text-decoration: line-through; }
