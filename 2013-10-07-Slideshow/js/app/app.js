@@ -20,6 +20,8 @@ function searchFlicker(){
   var query = $('#query').val();
   var url = 'http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=' + API_KEY + '&text=' + query + '&per_page=' + PER_PAGE + '&page=' + page + '&format=json&jsoncallback=?';
   $.getJSON(url, results);
+
+  console.log(url);
 }
 
 function results(data){
