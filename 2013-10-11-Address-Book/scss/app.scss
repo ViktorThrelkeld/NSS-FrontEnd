@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Amarante);
+
+body{
+  font-family: 'Amarante', cursive;
+  background-image: url(../img/nexus.jpg);
+  color:white;
+}
+h1{
+  font-family: 'Amarante', cursive;
+  color: white;
+}
+h6{
+  font-family: 'Amarante', cursive;
+  color: white;
+}
+h4{
+  font-family: 'Amarante', cursive;
+  color: white;
+}
+.person{
+  width: 180px;
+  height: 350px;
+  float: left;
+  margin-right: 10px;
+  border: 2px solid black;
+  list-style-type: none;
+   // background-color: pink;
+}
+li{
+  margin-left: 5px;
+  width: 180px;
+
+}
+
+.pic{
+  width: 176px;
+  // height: 234px;
+  margin-left: 0;
+}
+
+.clear{
+  clear: both;
+}
