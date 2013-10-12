@@ -24,13 +24,34 @@ h4 {
   border: 2px solid black;
   list-style-type: none; }
 
+.web {
+  overflow: hidden;
+  height: 20px; }
+
 li {
   margin-left: 5px;
-  width: 180px; }
+  width: 150px; }
+
+.address {
+  height: 50px;
+  overflow: hidden; }
+
+a.mail {
+  word-wrap: break-word; }
+
+.web {
+  word-wrap: break-word; }
 
 .pic {
-  width: 176px;
-  margin-left: 0; }
+  width: 150px;
+  height: 200px; }
+
+.img {
+  height: 200px;
+  border: hidden 9px #000000;
+  -moz-border-radius: 48px;
+  -webkit-border-radius: 48px;
+  border-radius: 48px; }
 
 .clear {
   clear: both; }
