@@ -26,13 +26,13 @@ function personAdded(person){
 }
 
 function viewPersonAdded(person){
-  var ul = '<ul class ="person"><li class="pic"><img class="img"></li><li class="name"></li><li class="address"></li><li class="web"></li><li class="email"><a class="mail"></a></li></ul>';
+  var ul = '<ul class ="person"><li class="pic"><img class="img"></li><li class="name"></li><li class="address"></li><li class="web"><a class="url"></a></li><li class="email"><a class="mail"></a></li></ul>';
   var $ul = $(ul);
 
   $ul.children('.pic').children('.img').attr('src', person.pic);
   $ul.children('.name').text(person.name);
   $ul.children('.address').text(person.address);
-  $ul.children('.web').text(person.web);
+  $ul.children('.web').children('.url').attr('href', person.web).text(person.web);
   $ul.children('.email').children('.mail').attr('href', 'mailto:' + person.email).text(person.email);
 
   $('#peeps').append($ul);

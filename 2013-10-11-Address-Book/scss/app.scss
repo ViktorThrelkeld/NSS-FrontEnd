@@ -28,7 +28,8 @@ h4{
 }
 .web{
   overflow: hidden;
-  height: 20px;
+  height: 25px;
+  border-bottom: 1px solid grey;
 }
 li{
   margin-left: 5px;
@@ -39,6 +40,7 @@ li{
   height: 50px;
   overflow: hidden;
 }
+
 a.mail{
   word-wrap: break-word;
 }

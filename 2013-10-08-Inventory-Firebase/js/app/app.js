@@ -11,8 +11,7 @@ db.items = [];
 db.statistics = {};
 db.statistics.grandTotal = 0;
 
-var items = [];
-var grandTotal = 0;
+
 $(document).ready(initialize);
 
 function initialize(){
@@ -29,29 +28,27 @@ function initialize(){
 
 function itemAdded(snapshot){
   var item = snapshot.val();
-  items.push(item);
   createRow(item);
   updateGrandTotal(item);
+  db.items.push(item);
 }
 
 function updateGrandTotal(item){
-    grandTotal += (item.count * item.value);
-    $('#grand-total').text('$' + grandTotal + '.00');
+    db.statistics.grandTotal += (item.count * item.value);
+    $('#grand-total').text('$' + db.statistics.grandTotal + '.00');
   }
 
 function personChanged(snapshot){
     var person = snapshot.val();
 
-
-
     try{
       $('#person').val(person.fullName);
       $('#address').val(person.address);
-
+      db.person = person;
     }catch(e){
       console.log(e);
     }
-    console.log(person);
+
     // for(var property in inventory.items){
     //   var item = inventory.items[property];
     //   items.push(item);
