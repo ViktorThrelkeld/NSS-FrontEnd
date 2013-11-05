@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset='utf-8'>
+  <meta content='width=device-width' name='viewport'>
+  <title>Foundation 4</title>
+  <link href='css/normalize.css' rel='stylesheet'>
+  <link href='css/foundation.css' rel='stylesheet'>
+  <link href='css/app.css' rel='stylesheet'>
+  <script src='js/vendor/custom.modernizr.js'></script>
+</head>
+<body>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <h1>Stock Exchange</h1>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-2 columns'>
+      <h6>Stock</h6>
+      <input id='symbol' placeholder='Symbol' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <h6>Quantity</h6>
+      <input id='quantity' placeholder='Quantity' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <h6>Buy Stock</h6>
+      <input class='small button success' id='buy' type='button' value='Buy Stock'>
+    </div>
+    <div class='small-6 columns'></div>
+  </div>
+  <div class='row'>
+    <div class='small-2 columns'>
+      <h6>Funds</h6>
+      <input id='funds' placeholder='Set Funds' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <h6>Set Funds</h6>
+      <input class='small button success' id='setFunds' type='button' value='Set Funds'>
+    </div>
+    <div class='small-2 columns'>
+      <h6>Update Interval</h6>
+      <input id='interval' placeholder='Interval' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <h6>Set Interval</h6>
+      <input class='small button success' id='setInterval' type='button' value='Set Interval'>
+    </div>
+    <div class='small-4 columns'></div>
+  </div>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <h6>Current Funds</h6>
+      <input id='currentFunds' readonly type='text'>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <table id='stockList'>
+        <tr>
+          <th id='name'>Name</th>
+          <th id='symbol'>Symbol</th>
+          <th id='quote'>Quote</th>
+          <th id='purchased'>Purchased</th>
+          <th id='total'>Total</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-2 columns'>
+      <p>Cash On Hand</p>
+    </div>
+    <div class='small-10 columns'>
+      <p id='totalFunds'></p>
+    </div>
+  </div>
+  <script src='js/vendor/jquery-1.10.2.js'></script>
+  <script src='js/vendor/foundation.min.js'></script>
+  <script src='js/vendor/underscore.js'></script>
+  <script src='js/vendor/moment.min.js'></script>
+  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+  <script src='js/app/app.js'></script>
+</body>

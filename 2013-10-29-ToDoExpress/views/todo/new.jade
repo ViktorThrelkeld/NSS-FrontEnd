@@ -1,0 +1,10 @@
+extends ../template/layout
+include ../mixins/form-helper
+
+
+block content
+  h1 To Do
+  h2 New To Do Page
+  a(href='/todo') To Do Page
+  form(action='/people', method='post')
+    mixin field()

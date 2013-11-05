@@ -1,0 +1,21 @@
+form(action='/artists/#{artist.isNew ? "" : artist.id}', method='post')
+  if !artist.isNew
+    input(type='hidden', name='_method', value='put')
+  fieldset
+    legend= title
+    .row
+      mixin field(4, 'name', 'Name', artist.name, null, true)
+      mixin field(4, 'website', 'Website', artist.website)
+      mixin field(4, 'photo', 'Photograph', artist.photo)
+    .row
+      .small-12.columns
+        label(for=bio) Biography
+        textarea#bio(name='bio')= artist.bio
+    .row
+      .small-12.columns
+        each song in songs
+          input(type='checkbox', value=song.id, name='songs')
+          span=song.title
+    .row
+      .small-2.columns.small-offset-8: a.button.radius.alert.small.expand(href='/artists') Cancel
+      .small-2.columns: button.radius.success.small.expand(type='submit') Save Artist

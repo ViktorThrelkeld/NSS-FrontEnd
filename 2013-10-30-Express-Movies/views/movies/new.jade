@@ -1,0 +1,29 @@
+extends ../template/layout
+include ../mixins/form-helper
+
+
+block content
+  .row
+    .small-12.columns
+      h1 New Movie Page
+  .row
+    .small-2.columns
+      a.button.small.radius.expand.tiny(href='/') Home page
+    .small-2.columns
+      a.button.small.radius.expand.tiny(href='/movies') Movie page
+    .small-10.columns
+  .row
+    .small-12.columns
+      form(action='/movies', method='post')
+        mixin field('title', 'Movie Title', 'Star Wars', true)
+        mixin field('image', 'Movie Image', 'image url here' )
+        mixin field('color', 'Color', '#ffcc33' )
+        mixin field('rated', 'Rating', 'pg-13?' )
+        mixin field('studio', 'Studio', 'LucasFilm' )
+        mixin field('gross', 'Gross', '$$$$$')
+        mixin field('numTheatres', 'Number of Theatres', '12')
+        button.tiny.success.rounded(value='submit') Save
+
+
+
+

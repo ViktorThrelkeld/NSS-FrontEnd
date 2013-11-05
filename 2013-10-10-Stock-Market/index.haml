@@ -1,0 +1,66 @@
+!!! 5
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+%head
+  %meta{charset: "utf-8"}
+  %meta{name: "viewport", content: "width=device-width"}
+  %title Foundation 4
+  %link{rel: "stylesheet", href: "css/normalize.css"}
+  %link{rel: "stylesheet", href: "css/foundation.css"}
+  %link{rel: "stylesheet", href: "css/app.css"}
+  %script{src: "js/vendor/custom.modernizr.js"}
+%body
+  .row
+    .small-12.columns
+      %h1 Stock Exchange
+  .row
+    .small-2.columns
+      %h6 Stock
+      %input#symbol{type: 'text', placeholder: 'Symbol'}
+    .small-2.columns
+      %h6 Quantity
+      %input#quantity{type: 'text', placeholder: 'Quantity'}
+    .small-2.columns
+      %h6 Buy Stock
+      %input#buy.small.button.success{type: 'button', value: 'Buy Stock'}
+    .small-6.columns
+  .row
+    .small-2.columns
+      %h6 Funds
+      %input#funds{type: 'text', placeholder: 'Set Funds'}
+    .small-2.columns
+      %h6 Set Funds
+      %input#setFunds.small.button.success{type: 'button', value: 'Set Funds'}
+    .small-2.columns
+      %h6 Update Interval
+      %input#interval{type: 'text', placeholder: 'Interval'}
+    .small-2.columns
+      %h6 Set Interval
+      %input#setInterval.small.button.success{type: 'button', value: 'Set Interval'}
+    .small-4.columns
+  .row
+    .small-12.columns
+      %h6 Current Funds
+      %input#currentFunds{type: 'text', readonly: true}
+  .row
+    .small-12.columns
+      %table#stockList
+        %tr
+          %th#name Name
+          %th#symbol Symbol
+          %th#quote Quote
+          %th#purchased Purchased
+          %th#total Total
+  .row
+    .small-2.columns
+      %p Cash On Hand
+    .small-10.columns
+      %p#totalFunds
+
+
+  %script{src: 'js/vendor/jquery-1.10.2.js'}
+  %script{src: 'js/vendor/foundation.min.js'}
+  %script{src: 'js/vendor/underscore.js'}
+  %script{src: 'js/vendor/moment.min.js'}
+  %script{src: 'https://cdn.firebase.com/v0/firebase.js'}
+  %script{src: 'js/app/app.js'}

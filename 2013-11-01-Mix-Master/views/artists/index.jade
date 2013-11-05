@@ -1,0 +1,25 @@
+extends ../template/layout
+
+block content
+  .row
+    .small-12.columns
+      h1 Artists
+  .row
+    .small-12.columns
+      #artists
+        each artist in artists
+          .artists
+            h3= artist.name
+            p= artist.createdAt
+            a(href='artists/#{artist.id}'): img(src=artist.photo)
+            p= artist.songs
+            p=artist.website
+            p=artist.bio
+            p=artist.createdAt
+
+            #nuke
+              form(action='/artists/#{artist.id}', method='post')
+                input(type='hidden', name='_method', value='delete')
+                button.tiny.radius.alert(type='submit') Delete
+
+
