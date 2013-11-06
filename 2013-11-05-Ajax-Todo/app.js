@@ -1,4 +1,7 @@
 require('./models/priority');
+require('./models/todo');
+
+
 
 
 // express application
@@ -37,6 +40,9 @@ if ('development' == app.get('env')) {
 app.get('/', home.index);
 app.get('/todos', todos.index);
 app.post('/priorities', priorities.create);
+
+app.post('/todos', todos.create);
+app.delete('/todos/:id', todos.delete);
 
 
 // start server
