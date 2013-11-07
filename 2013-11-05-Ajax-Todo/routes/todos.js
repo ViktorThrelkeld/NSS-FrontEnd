@@ -33,6 +33,19 @@ exports.create = function(req, res){
 
 exports.delete = function(req, res){
   Todo.findByIdAndRemove(req.params.id, function(err, todo){
-    res.redirect('/todos');
+    res.send(todo);
+  });
+};
+
+/*
+ * PUT /todos/:id/complete
+ */
+
+exports.completed = function(req, res){
+  Todo.findById(req.params.id, function(err, todo){
+    todo.completed = !todo.completed;
+    todo.save(function(err, todo){
+      res.send(todo);
+    });
   });
 };
