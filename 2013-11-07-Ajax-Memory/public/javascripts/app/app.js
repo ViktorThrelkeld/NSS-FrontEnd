@@ -13,19 +13,22 @@ function initialize(){
 
 
 function submitGame(e){
- var url = $(this).attr('action');
- var name = this.player.value;
- var number = this.squares.value;
- var data = {
-  player : name,
-  squares : number
- };
+  var url = $(this).attr('action');
+  debugger;
+  var name = this.player.value;
+  var number = this.squares.value;
+  // var cards = this.cards.value;
+
+  var data = {
+    player : name,
+    squares : number,
+    // cards : []
+  };
   sendGenericAjaxRequest(url, data, 'post', null, e, function(data, status, jqXHR){
-  htmlStartGame(data);
+    htmlStartGame(data);
   });
 
 }
-
 
 
 // ------------------------------------------------------------------------- //
@@ -34,12 +37,12 @@ function submitGame(e){
 
 function htmlStartGame(game){
   $('#player').text(game.player);
-  $('#cards').text(game.squares);
-
   $('input[name="player"]').val('');
   $('input[name="squares"]').val('');
   $('#cards').attr('data-game', game._id);
 
+  // numberShuffle(game.squares);
+  $('#cards').text(game.cards);
 
 }
 
@@ -61,3 +64,17 @@ function sendGenericAjaxRequest(url, data, verb, altVerb, event, successFn){
   $.ajax(options);
   if(event) event.preventDefault();
 }
+
+// ------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------- //
+// ------------------------------------------------------------------------- //
+
+// function numberShuffle(x){
+//   var nums = [];
+//   for(var i = 0; i < x; i++){
+//     nums.push(i);
+//     nums.push(i);
+//     return nums;
+//   }
+
+// }
