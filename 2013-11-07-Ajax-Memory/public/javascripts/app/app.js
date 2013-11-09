@@ -13,6 +13,7 @@ function initialize(){
 
 
 function submitGame(e){
+  // e.preventDefault();
   var url = $(this).attr('action');
   debugger;
   var name = this.player.value;
@@ -21,9 +22,21 @@ function submitGame(e){
 
   var data = {
     player : name,
-    squares : number,
+    squares : number
     // cards : []
   };
+
+  // $.ajax({
+  //   url: url,
+  //   type: "GET",
+  //   data: data,
+  //   success: function(data, status, jqXHR){
+  //    htmlStartGame(data);
+  //  },
+  //   error: function(jqXHR, status, error){
+  //   console.log(error);
+  //  }
+  // });
   sendGenericAjaxRequest(url, data, 'post', null, e, function(data, status, jqXHR){
     htmlStartGame(data);
   });
